@@ -1,0 +1,42 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true,
+        "es6": true
+    },
+    "extends": [
+        "airbnb-base"
+    ],
+    "parser": "babel-eslint",
+    "babelOptions": {
+        "configFile": "/server/babel.config.json"
+    },
+    "parserOptions": {
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "rules": {
+        "no-console": "off",
+        "no-tabs": [
+            "error",
+            {
+                "allowIndentationTabs": true
+            }
+        ],
+        "indent": [
+            "error",
+            "tab"
+        ],
+        "prefer-destructuring": [
+            "error",
+            {
+                "object": false,
+                "array": false
+            }
+        ],
+        "import/extensions": [
+            "error",
+            "always"
+        ]
+    }
+}
